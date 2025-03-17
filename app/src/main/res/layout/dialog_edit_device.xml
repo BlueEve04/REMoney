@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="设备名称" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="设备价格"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextBuyTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="购买时间 (yyyy-MM-dd)"
+        android:layout_margin="10dp"
+        android:focusable="false" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:layout_margin="1sp">
+       <Button
+           android:id="@+id/buttonAdd"
+           android:layout_margin="5dp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@android:color/transparent"
+           android:text="保存"
+           android:textSize="16sp"
+           android:textColor="@color/black"/>
+
+       <Button
+           android:id="@+id/buttonDelete"
+           android:layout_margin="5dp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:background="@android:color/transparent"
+           android:textSize="16sp"
+           android:textColor="@color/black"
+           android:text="删除" />
+
+       <Button
+           android:id="@+id/buttonCancel"
+           android:layout_margin="5dp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:background="@android:color/transparent"
+           android:textSize="16sp"
+           android:textColor="@color/black"
+           android:text="取消" />
+   </LinearLayout>
+</LinearLayout>

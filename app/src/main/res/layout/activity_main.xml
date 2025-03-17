@@ -1,0 +1,62 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary90">
+
+    <!-- 标题栏 -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:elevation="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/material_dynamic_primary40"
+        app:title="REMoney-Beta0.4"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="55dp"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"/> <!-- 避免被 FAB 遮挡 -->
+
+    <!-- 编辑按钮 -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="100dp"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        app:backgroundTint="@color/material_dynamic_primary40"
+        app:tint="@android:color/white"
+        android:src="@android:drawable/ic_menu_edit"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|start"
+        app:backgroundTint="@color/material_dynamic_primary40"
+        app:tint="@android:color/white"
+        android:src="@android:drawable/ic_dialog_info"/>
+
+    <!-- FloatingActionButton -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        app:backgroundTint="@color/material_dynamic_primary40"
+        app:tint="@android:color/white"
+        android:src="@android:drawable/ic_input_add"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="你好，欢迎使用REMoney。\n我是BlueEve AKA YelanMa\n本软件灵感来源于《记物》，但是作者没有使用Material Design并且我想要自己实现一个，遂作此软件~~\n\n如果这个软件帮得到你，我非常荣幸^^\n\n\n当前版本0.4-beta"
+        android:textColor="@color/material_dynamic_primary40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="134dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="134dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:src="@drawable/money" />
+
+    </LinearLayout>
+</LinearLayout>
